@@ -1,0 +1,40 @@
+{
+  "environment": "Gymnasium Taxi-v3",
+  "algorithm": "Tabular Q-learning",
+  "settings": {
+    "episodes": 20000,
+    "learning_rate": 0.15,
+    "discount_factor": 0.99,
+    "initial_epsilon": 1.0,
+    "minimum_epsilon": 0.03,
+    "epsilon_decay": 0.9995,
+    "evaluation_episodes": 200,
+    "seed": 42
+  },
+  "q_table_shape": [
+    500,
+    6
+  ],
+  "random_baseline": {
+    "episodes": 200,
+    "mean_reward": -772.44,
+    "reward_std": 101.369,
+    "mean_steps": 196.695,
+    "successful_deliveries": 8,
+    "success_rate": 0.04
+  },
+  "trained_agent": {
+    "episodes": 200,
+    "mean_reward": 7.98,
+    "reward_std": 2.508,
+    "mean_steps": 13.02,
+    "successful_deliveries": 200,
+    "success_rate": 1.0
+  },
+  "initial_500_training_mean_reward": -626.61,
+  "final_500_training_mean_reward": 6.192,
+  "initial_500_training_success_rate": 0.284,
+  "final_500_training_success_rate": 1.0,
+  "demo_steps": 14,
+  "demo_reward": 7
+}
